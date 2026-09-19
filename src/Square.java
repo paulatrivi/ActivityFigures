@@ -3,4 +3,8 @@ public class Square extends Rectangle{
     Square(double lado){
     super(lado,lado);
     }
+
+    public String toString() {
+        return "Square";
+    }
 }

@@ -9,4 +9,8 @@ public class Triangle implements Shape{
     public double getArea() {
         return (base*altura)/2;
     }
+
+    public String toString() {
+        return "Triangle";
+    }
 }

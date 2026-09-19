@@ -1,6 +1,6 @@
 
 import java.util.Arrays;
-import java.util.Comparator;
+
 public static void main(String[] args) {
     Shape[] v = new Shape[4];
 
@@ -11,7 +11,7 @@ public static void main(String[] args) {
 
     double res = sum(v);
 
-    System.out.println("sum: " + res);
+    System.out.println("sum: " + res + "units");
 
     print(v);
 

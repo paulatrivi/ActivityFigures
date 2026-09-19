@@ -9,4 +9,8 @@ public class Rectangle implements Shape{
     public double getArea() {
         return lado1*lado2;
     }
+
+    public String toString() {
+        return "Rectangle";
+    }
 }
