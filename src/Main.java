@@ -11,11 +11,16 @@ public static void main(String[] args) {
 
     double res = sum(v);
 
-    System.out.println("sum: " + res + "units");
+    System.out.println("suma area total: " + res + " units");
+    System.out.println();
+    System.out.println("Figuras sin ordenar: ");
+
 
     print(v);
+    System.out.println();
 
     sort(v);
+    System.out.println("Figuras ordenadas: ");
 
     print(v);
 }
@@ -32,10 +37,12 @@ private static double sum(Shape[] shapes)
 private static void print(Shape[] shapes) {
     for (Shape s : shapes) {
         System.out.println(s);
+        System.out.println(s.getArea() + " units");
+
     }
 }
 
 private static void sort(Shape[] shapes) {
-    Arrays.sort(shapes, (s1,s2) -> Double.compare(s2.getArea(),s1.getArea()));
+    Arrays.sort(shapes);
     }
 
